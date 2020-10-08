@@ -300,6 +300,10 @@
     background-color: #e92626;
     border-radius: 5px;
     cursor: pointer;
+
+    @media screen and (max-width: 1280px){
+      margin-bottom: 80px;
+    }
   }
 
   &__button-icon {

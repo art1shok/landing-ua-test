@@ -161,14 +161,23 @@
     border-radius: 5px;
     background-color: #fff;
 
+    @media screen and (max-width: 768px){
+      width: 330px;
+    }
+
+    @media screen and (max-width: 425px){
+      width: 290px;
+    }
+
     &:before {
       position: absolute;
       top: -10px;
       left: 50%;
-      width: 357px;
-      height: 20px;
+      width: 90%;
+      height: 10px;
       content: '';
-      border-radius: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       transform: translateX(-50%);
       background-color: rgba(255, 255, 255, 0.7);
     }
@@ -182,6 +191,10 @@
     transform: translateX(-50%);
     max-width: 346px;
     max-height: 94px;
+
+    @media screen and (max-width: 768px){
+      max-width: 300px;
+    }
   }
 
   &__buttons-container {
@@ -196,6 +209,14 @@
     background-color: #fff;
     border-radius: 5px;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      width: 70px;
+    }
+
+    @media screen and (max-width: 425px){
+      width: 65px;
+    }
 
     &--active {
       background-color: rgba(255, 255, 255, 0.1);

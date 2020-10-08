@@ -1,11 +1,13 @@
 {
+  "homepage": "https://art1shok.github.io/landing-ua-test/",
   "name": "landing-ua-test",
   "version": "1.0.0",
   "description": "landing-ua-test",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "start": "gulp watch",
+    "build": "gulp build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Kvitka Artem",
   "license": "GPL-3.0",
@@ -13,6 +15,7 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gh-pages": "^2.2.0"
   }
 }
