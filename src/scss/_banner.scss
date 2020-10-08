@@ -12,6 +12,11 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+    flex-direction: column;
+  }
+
   &__description {
     display: flex;
     flex-direction: column;
@@ -166,7 +171,7 @@
     }
 
     @media screen and (max-width: 425px){
-      width: 290px;
+      width: 280px;
     }
 
     &:before {

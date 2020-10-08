@@ -7,12 +7,20 @@
     padding: 0 20px;
   }
 
+  @media screen and (max-width: 768px){
+    margin: 55px auto 0;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     max-width: 1170px;
     padding: 81px 0 60px;
     margin: 0 auto;
+
+    @media screen and (max-width: 768px){
+      padding: 40px 0 30px;
+    }
   }
 
   &__titles-container {
@@ -20,7 +28,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    max-height: 91px;
 
     @media screen and (max-width: 1280px) {
       flex-direction: column;
@@ -29,7 +36,7 @@
     }
 
     @media screen and (max-width: 768px){
-      margin-bottom: 60px;
+      margin-bottom: 30px;
     }
   }
 
@@ -45,11 +52,14 @@
     @media screen and (max-width: 1280px) {
      font-size: 36px;
       line-height: 40px;
+      max-width: 580px;
+      margin-bottom: 30px;
     }
 
     @media screen and (max-width: 768px){
       font-size: 28px;
       line-height: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -87,7 +97,8 @@
     margin-bottom: 51px;
 
     @media screen and (max-width: 1280px){
-      justify-content: space-around;
+      justify-content: center;
+      margin-bottom: 80px;
     }
   }
 
@@ -96,14 +107,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px 25px;
+    padding: 30px 25px 52px 24px;
     width: 100%;
+    height: 100%;
     max-width: 277px;
     max-height: 376px;
     background-color: #fff;
     border-radius: 5px;
 
-    z-index: 10;
     &:not(:last-child) {
       margin-right: 20px;
 
@@ -120,6 +131,7 @@
       position: relative;
       max-height: 366px;
       background-color: #0041a5;
+      margin-bottom: 10px;
 
       &:before {
         position: absolute;
@@ -138,9 +150,9 @@
 
   &__img-wrapper {
     position: relative;
-    width: 129px;
-    height: 129px;
-    background-color: #f8f9fa;
+    width: 139px;
+    height: 139px;
+    background-color: #f8fbfa;
     border-radius: 50%;
     margin-bottom: 30px;
 
@@ -215,7 +227,7 @@
 
     @media screen and (max-width: 1280px) {
       max-width: 450px;
-      margin-bottom: 60px;
+      margin-bottom: 80px;
     }
 
     @media screen and (max-width: 1024px){
@@ -234,7 +246,7 @@
     @media screen and (max-width: 1280px){
       max-width: 50px;
       max-height: 50px;
-      top: -50px;
+      top: -55px;
       left: 50%;
       transform: translateX(-50%);
     }
