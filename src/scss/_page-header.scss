@@ -1,0 +1,252 @@
+.page-header {
+  background: url('./../assets/images/background.png') no-repeat center/cover
+  #606060;
+  margin: 0 auto;
+
+  &__background {
+    background: rgba(0,0,0,0.25);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1720px;
+    padding: 26px 0 24px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+
+    @media screen and(max-width: 1919px){
+      justify-content: space-between;
+      padding: 26px 20px 24px;
+
+      @media screen and (max-width: 1024px){
+       flex-direction: column;
+      }
+
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 86px;
+
+    @media screen and(max-width: 1919px){
+      margin-right: 0;
+
+      @media screen and (max-width: 1024px){
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 66px;
+    max-height: 49px;
+  }
+
+  &__logo-text {
+    max-width: 103px;
+    margin-left: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__nav {
+    @media screen and (max-width: 1024px){
+      margin-bottom: 35px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 26px;
+
+      @media screen and (max-width: 768px){
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &--active {
+      color: #fff;
+    }
+  }
+
+  &__arrow-down {
+    width: 100%;
+    max-width: 13px;
+    height: 9px;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.2s;
+    }
+  }
+
+  &__burger-menu {
+    position: relative;
+    display: none;
+    width: 40px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.7);
+      content: '';
+      top: -8px;
+    }
+
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.7);
+      content: '';
+      top: 8px;
+    }
+
+
+    @media screen and (max-width: 1439px) {
+      display: block;
+    }
+  }
+
+
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-left: 129px;
+
+    @media screen and(max-width: 1919px){
+      margin-left: 0;
+    }
+
+    @media screen and(max-width: 1440px){
+      display: none;
+    }
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__phone-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 21px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__numbers-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__number {
+    margin: 5px 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__button {
+    padding: 17px 31px 18px 32px;
+    margin-left: 71px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #e92626;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media screen and(max-width: 1919px){
+      margin-left: 40px;
+    }
+  }
+
+  &__language {
+    margin-left: 194px;
+    display: flex;
+    align-items: center;
+
+    @media screen and(max-width: 1919px){
+      margin-left: 0;
+    }
+
+    @media screen and(max-width: 1440px){
+      display: none;
+    }
+  }
+
+  &__language-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 25px;
+    max-height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__language-description {
+    margin-left: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

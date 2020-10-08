@@ -1,0 +1,215 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  padding: 145px 0 135px;
+  margin: 0 auto;
+
+
+  @media screen and (max-width: 1280px) {
+    padding: 145px 20px 135px;
+    flex-direction: column;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 90px;
+
+    @media screen and (max-width: 1280px) {
+      text-align: center;
+      align-items: center;
+      padding: 0;
+      margin: 0 auto;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 130px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 100px;
+      line-height: 100px;
+    }
+
+    @media screen and (max-width: 768px){
+      font-size: 50px;
+      line-height: 54px;
+    }
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__text-container {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1280px) {
+     flex-direction: column;
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 27px 36px 28px 79px;
+    margin-right: 50px;
+    white-space: nowrap;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    background-color: #e92626;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    @media screen and (max-width: 1280px) {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 30px;
+    max-height: 30px;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+  }
+
+  &__text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 500px;
+
+      margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 768px){
+     font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__accentuated {
+    font-weight: 600;
+  }
+
+  &__certification {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 377px;
+
+    @media screen and (max-width: 1280px) {
+      margin: 0 auto;
+      align-items: center;
+      max-width: 700px;
+    }
+  }
+
+  &__certification-title {
+    margin-bottom: 70px;
+    max-width: 303px;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 600px;
+      text-align: center;
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 768px){
+      max-width: 450px;
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    height: 111px;
+    width: 377px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+
+    &:before {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 357px;
+      height: 20px;
+      content: '';
+      border-radius: 5px;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    max-width: 346px;
+    max-height: 94px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__certification-button {
+    position: relative;
+    width: 79px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &--active {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px dashed rgba(255, 255, 255, 0.5) ;
+    }
+  }
+
+  &__certificate-logo {
+    position: absolute;
+    width: 100%;
+    max-width: 31px;
+    min-height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

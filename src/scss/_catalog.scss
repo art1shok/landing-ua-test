@@ -1,0 +1,314 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 150px 0;
+  max-width: 1170px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 0 20px;
+  }
+
+  &__titles-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1280px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+  }
+
+  &__title {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    max-width: 490px;
+
+    @media screen and (max-width: 1280px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @media screen and (max-width: 768px){
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  &__accentuated {
+    color: #e92626;
+    font-weight: 700;
+  }
+
+  &__main-title {
+    align-self: flex-start;
+    max-width: 523px;
+    width: 100%;
+    max-height: 120px;
+    text-transform: uppercase;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 130px;
+    color: #2a2a2a;
+
+    @media screen and (max-width: 1280px) {
+      margin: 0 auto;
+      font-size: 100px;
+      line-height: 100px;
+    }
+
+    @media screen and (max-width: 768px){
+      font-size: 50px;
+      line-height: 54px;
+    }
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__categories {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 35px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px){
+      line-height: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+
+
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__nav-item {
+
+    @media screen and (max-width: 768px){
+      max-width: 700px;
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 52px;
+
+      @media screen and (max-width: 1280px) {
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__nav-link {
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: rgba(73, 86, 102, 0.5);
+
+    &--active {
+      font-weight: 700;
+      color: #0041a5;
+
+      &::after {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 87px;
+        height: 3px;
+        content: '';
+        background-color: #0041a5;
+        z-index: 1;
+
+        @media screen and (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1280px){
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    @media screen and (max-width: 768px){
+      width: 150px;
+    }
+  }
+
+  &__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1280px){
+      justify-content: space-around;
+    }
+  }
+
+  &__card-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 292px;
+    padding: 30px 28px 23px 30px;
+    border: 2px solid #e9ebef;
+
+    @media screen and (max-width: 768px){
+      align-items: center;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+
+  &__arrow-container {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e9ebef;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      top: 50px;
+      left: 50%;
+
+      transform: translateX(-250%);
+    }
+
+    &--active {
+      background-color: #e92626;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 100%;
+    max-width: 23px;
+    height: 17px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__tape {
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+    max-height: 220px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__card-title {
+    max-width: 219px;
+    text-transform: uppercase;
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px){
+
+      max-width: 270px;
+    }
+  }
+
+  &__card-description {
+    max-width: 240px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495666;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 768px){
+      max-width: 270px;
+    }
+  }
+
+  &__card-link {
+    max-width: 80px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0041a5;
+    text-decoration: underline;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      max-width: 120px;
+    }
+
+    &--active {
+      color: #e92626;
+    }
+  }
+
+  &__button {
+    position: relative;
+    align-self: center;
+    padding: 27px 47px 28px 82px;
+    width: 100%;
+    max-width: 450px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e92626;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__button-icon {
+    position: absolute;
+    width: 100%;
+    max-width: 30px;
+    max-height: 30px;
+    top: 50%;
+    left: 31px;
+    transform: translateY(-50%);
+  }
+}
